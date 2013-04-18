@@ -20,7 +20,7 @@ module Ensolabs
     # config.i18n.default_locale = :de
 
     # For bootstrap-sass, see: https://github.com/thomas-mcdonald/bootstrap-sass
-    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.css *.js)
     config.assets.paths += Dir[Rails.root.join("app", "assets", "images", "backgrounds").to_s]
   end
 end
