@@ -21,7 +21,6 @@ $(document).ready ->
     hoursLeft = Math.floor(timeDiffSeconds / (60 * 60)) % 24
     minutesLeft = Math.floor(timeDiffSeconds / 60) % 60
     secondsLeft = timeDiffSeconds % 60
-
     $days.text daysLeft
     $hours.text hoursLeft
     $minutes.text minutesLeft
@@ -30,3 +29,16 @@ $(document).ready ->
   updateTime()
   fadeInElements()
   setInterval(updateTime, 1000)
+
+  $emailnotify = $("#email_notify")
+  $alert = $(".alert")
+
+  $emailnotify.on("click", () ->
+    $emailnotify.hide()
+    $alert.show())
+
+  $("[data-hide]").on("click", () ->
+    $("." + $(this).attr("data-hide")).hide()
+    $emailnotify.show())
+
+  $alert.hide()
