@@ -80,5 +80,5 @@ Ensolabs::Application.configure do
 
   # For Heroku
   config.serve_static_assets = true
-  config.assets.initialize_on_precompile false
+  config.assets.initialize_on_precompile = false
 end
