@@ -76,7 +76,7 @@ Ensolabs::Application.configure do
   # config.autoflush_log = false
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
-  config.log_formatter = ::Logger::Formatter.
+  config.log_formatter = ::Logger::Formatter
 
   # For Heroku
   config.assets.initialize_on_precompile false
