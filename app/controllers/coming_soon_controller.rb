@@ -1,5 +1,5 @@
 class ComingSoonController < ApplicationController
-  def home
+  def index
     render 'static_pages/coming_soon'
   end
 end

@@ -23,5 +23,6 @@ module Ensolabs
     #config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.css *.js)
     config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
     config.assets.paths += Dir[Rails.root.join("app", "assets", "images", "backgrounds").to_s]
+    config.assets.paths += Dir[Rails.root.join("app", "assets", "images", "slides", "scene1").to_s]
   end
 end
